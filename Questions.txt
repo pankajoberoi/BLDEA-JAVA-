@@ -1,0 +1,46 @@
+Write a program to accept two integers and check whether they are equal or not.
+
+Write a program to check whether a given number is even or odd
+
+Write a program to check whether a given number is positive or negative.
+
+Write a program to find whether a given year is a leap year or not.
+
+Write a program to read the age of a candidate and determine whether he is eligible to cast his/her own vote.
+
+Write a program to accept the height of a person in centimeters and categorize the person according to their height.
+
+Write a program to find the largest of three numbers.
+
+Write a program to determine eligibility for admission to a professional course based on the following criteria: Go to the editor
+Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50 and Total in all three subject >=190 or Total in Maths and Physics >=140 ------------------------------------- Input the marks obtained in Physics :65 Input the marks obtained in Chemistry :51 Input the marks obtained in Mathematics :72 Total marks of Maths, Physics and Chemistry : 188 Total marks of Maths and Physics : 137 The candidate is not eligible.
+
+Write a program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
+
+Write a program to read temperature in centigrade and display a suitable message according to the temperature state below:
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+
+Write a program to check whether a character is an alphabet, digit or special character.
+
+Write a program in C to calculate and print the electricity bill of a given customer. The customer ID, name, and unit consumed by the user should be captured from the keyboard to display the total amount to be paid to the customer.
+
+The charge are as follow :
+
+Unit	                             Charge/unit
+upto 199	                           @1.20
+200 and above but less than 400	       @1.50
+400 and above but less than 600	       @1.80
+600 and above	                       @2.00
+If bill exceeds Rs. 400 then a surcharge of 15% will be charged and the minimum bill should be of Rs. 100/-
+
+Write a program to read any Month Number in integer and display the number of days for this month.
+Test Data :
+7
+Expected Output :
+Month have 31 days
+
