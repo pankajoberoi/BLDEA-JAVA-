@@ -44,3 +44,79 @@ Test Data :
 Expected Output :
 Month have 31 days
 
+
+==================================================================
+Write a program in C to read 10 numbers from the keyboard and find their sum and average.
+
+Write a program in C to display the cube of the number up to an integer.
+Test Data :
+Input number of terms : 5
+Expected Output :
+Number is : 1 and cube of the 1 is :1
+Number is : 2 and cube of the 2 is :8
+Number is : 3 and cube of the 3 is :27
+Number is : 4 and cube of the 4 is :64
+Number is : 5 and cube of the 5 is :125
+
+Write a program in C to display a pattern like a right angle triangle using an asterisk.
+
+The pattern like :
+*
+**
+***
+****
+
+Write a C program to display a pattern like a right angle triangle with a number.
+
+The pattern like :
+1
+12
+123
+1234
+
+Write a program in C to make such a pattern like a right angle triangle with a number which will repeat a number in a row.
+
+The pattern like :
+
+ 1
+ 22
+ 333
+ 4444
+
+
+Write a C program to make such a pattern as a pyramid with an asterisk.
+
+   * 
+  * * 
+ * * * 
+* * * *
+
+
+Write a C program to calculate the factorial of a given number.
+Test Data :
+Input the number : 5
+Expected Output :
+The Factorial of 5 is: 120
+
+
+Write a C program to check Palindrome number
+
+
+Write a program in C to display the first n terms of the Fibonacci series.
+Fibonacci series 0 1 2 3 5 8 13 .....
+
+Write a program in C to display a given number in reverse order.
+Test Data :
+Input a number: 12345
+Expected Output :
+The number in reverse order is : 54321
+
+Sum of Digits of a Number: Write a program to find the sum of digits of a given number using a for loop.
+
+Count Digits in a Number: Write a program to count the number of digits in a given number using a while loop.
+
+Guess the number game
+
+
+
+
