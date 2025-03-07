@@ -1,72 +1,65 @@
 import java.util.Scanner;
 
 public class Demo4 {
+
+    public static double percentage(int arr[]){
+
+        double sum=0;
+        for(int i=0;i<arr.length;i++){
+            sum=sum+arr[i];
+        }
+        double percentage=(sum/150)*100;
+        return percentage;
+    }
+
     public static void main(String[] args) {
-        // int nums[] ={2,6,4,1}; normal array
+        //we need to store marks for 5 students
 
-        // System.out.println(nums[2]);// random access
+        // int studentMarks[] ={94,99,33,20,0};declaraed the array with values
 
-        // nums[2]=9;
+        // System.out.println(studentMarks[2]);
 
-        // System.out.println(nums[2]);
+        // studentMarks[2]=88;
 
-        // for(int i=0;i<nums.length;i++){
-        //     System.out.println(nums[i]);
-        // }
+        // System.out.println(studentMarks[2]);
 
-        // int num[] = new int[4];
-        // Scanner sc= new Scanner(System.in);
-        // for(int i=0;i<num.length;i++){
-        //     num[i]=sc.nextInt();
-        // }
-
-        // for(int i=0;i<num.length;i++){
-        //     System.out.println(num[i]);
-        // }
-        // int nums[][] = new int[3][4];  2D array
         
-        // for(int i=0;i<3;i++){
-        //     for(int j=0;j<4;j++){
-        //         nums[i][j]=(int)(Math.random()*100);
-        //     }
-            
+        //int age[] = new int[4];// declared the array with the size
+
+        // age[0]=22;
+        // age[1]=33;
+        // age[2]=44;
+        // age[3]=77;
+
+        // age[2]=90;
+
+
+        // you need to print every element of ana array
+        
+        // System.out.println("Scanning valuess.....");
+        // Scanner sc= new Scanner(System.in);
+        // for(int i=0;i<4;i++){
+        //     age[i]=sc.nextInt();
         // }
 
-
-        // for(int i=0;i<3;i++){
-        //     for(int j=0;j<4;j++){
-        //         System.out.print(nums[i][j]+ " ");
-        //     }
-        //     System.out.println();
+        // System.out.println("printing values.....");
+        // for(int i=0;i<4;i++){
+        //     System.out.println(age[i]);
         // }
 
- 
-        // for(int n[] : nums){
-        //     for(int m : n){
-        //         System.out.print(m + " ");
-        //     }
-        //     System.out.println();
-        // }
+        // int arr[]= new int[4];
 
-        int nums[][]=new int[3][];//jagged array
+        // System.out.println(arr[4]);
 
-        nums[0]=new int [3];
-        nums[1]=new int [4];
-        nums[2]=new int [2];
+        // int numbers[] = {22,23,21,20,25};
 
-        for(int i=0;i<nums.length;i++){
-            for(int j=0;j<nums[i].length;j++){
-                nums[i][j]=(int)(Math.random()*100);
-            }
-            
-        }
+        // double result=percentage(numbers);
 
-        for(int n[] : nums){
-            for(int m : n){
-                System.out.print(m + " ");
-            }
-            System.out.println();
-        }
+        // System.out.println("your percentage is : "+result);
+              
 
-    }   
+        
+
+
+    }
 }
