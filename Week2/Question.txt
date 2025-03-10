@@ -1,0 +1,42 @@
+🌟 Hotel Booking System with Customer Association
+Create a hotel management system using Java with the following requirements:
+
+🔹 Base Class: Room
+roomNumber (int) – Unique identifier for the room
+price (double) – Cost per night
+availability (boolean) – Indicates whether the room is available
+customer (Customer) – Stores the customer who booked the room
+
+🔹 Derived Class 1: LuxuryRoom (inherits from Room)
+jacuzziAvailable (boolean) – Indicates if a jacuzzi is available
+
+🔹 Derived Class 2: DeluxeRoom (inherits from Room)
+seaView (boolean) – Indicates if a sea view is available
+
+🔹 Class: Customer
+name (String) – Customer's name
+contactNumber (String) – Customer's contact details
+bookRoom(Room r) – Book the room if available; otherwise, display "Room not available"
+
+🔹 Class: Hotel
+hotelName (String) – Name of the hotel
+rooms[] (Array of Room) – Array to store rooms
+addRoom(Room r) – Add a room to the hotel
+displayAvailableRooms() – Display all available rooms with details
+bookRoom(int roomNumber, Customer c) – Book a room for a customer if available; otherwise, display "Room not available"
+displayBookedRooms() – Display details of all booked rooms and which customer booked them
+
+
+🔹 Main Method:
+Create a Hotel object
+Add multiple rooms to the hotel
+Create Customer objects and allow them to book rooms
+Display available rooms before and after booking
+Display details of booked rooms and their customers
+
+
+🌟 Storyline Example:
+You are building a hotel management system for a luxury resort. The hotel offers both luxury and deluxe rooms.
+When a customer books a room, the system should store which customer booked which room.
+The system should also allow the hotel staff to check which rooms are booked and by whom.
+Make sure to handle cases where a room is already booked or unavailable.
