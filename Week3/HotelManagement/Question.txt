@@ -13,7 +13,6 @@ jacuzziAvailable (boolean) – Indicates if a jacuzzi is available
 🔹 Derived Class 2: DeluxeRoom (inherits from Room)
 seaView (boolean) – Indicates if a sea view is available
 
-🔹 Class: Customer
 name (String) – Customer's name
 contactNumber (String) – Customer's contact details
 bookRoom(Room r) – Book the room if available; otherwise, display "Room not available"

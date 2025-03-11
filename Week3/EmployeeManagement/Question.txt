@@ -1,0 +1,30 @@
+
+Problem Statement:
+A company wants to create an Employee Management System to store employee details and allow employee-related operations.
+
+Requirements:
+Create a base class Person with the following attributes:
+name (String)
+age (int)
+contactNumber (String)
+Create a toString() method to display details
+
+
+
+Create a derived class Employee that extends Person with:
+employeeId (String)
+department (String)
+salary (double)
+Override toString() to display employee details
+Create a final method getAnnualSalary() that returns the yearly salary
+
+
+Create a Manager class that extends Employee with:
+teamSize (int)
+Use super to call the parent class constructor
+In Main class:
+
+Create an array of 5 Employee objects
+Create at least one Manager object
+Find and display all employees with a salary greater than 50,000
+Compare two Employee objects using equals()

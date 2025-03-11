@@ -1,0 +1,46 @@
+🔥 Question 3: Vehicle Rental System
+Problem Statement:
+A vehicle rental company wants to create a system to manage available and rented vehicles.
+
+Requirements:
+Create a base class Vehicle with:
+vehicleNumber (String)
+brand (String)
+pricePerDay (double)
+available (boolean)
+
+
+Create a derived class Car that extends Vehicle with:
+fuelType (String)
+Override toString() to display car details
+
+
+
+Create a derived class Bike that extends Vehicle with:
+helmetIncluded (boolean)
+Override toString() to display bike details
+
+
+Create a Customer class with:
+customerId (String)
+name (String)
+
+
+Create a Rental class with:
+Customer object
+Vehicle object
+days (int)
+calculateTotalCost() – Calculate rental cost
+In Main class:
+
+Create an array of vehicles
+Allow customer to rent a vehicle
+Display available and rented vehicles
+Use super and this to manage constructor calls
+
+
+
+Expected Output:
+Display available and rented vehicles
+Calculate and display rental cost
+Use toString() to show customer and vehicle details
