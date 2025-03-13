@@ -1,18 +1,26 @@
-package HotelManagement;
+package Week3.HotelManagement;
 
+// 🔹 Derived Class 2: DeluxeRoom (inherits from Room)
+// seaView (boolean) – Indicates if a sea view is available
 public class DeluxeRoom extends Room{
     private boolean seaView;
 
-    public DeluxeRoom(int roomNumber, double price, boolean availability, boolean seaView) {
-        super(roomNumber, price, availability);
+    
+
+    public DeluxeRoom(int roomNumber, double price, boolean availability,boolean seaView) {
+        super(roomNumber,price,availability);
         this.seaView = seaView;
     }
 
-    @Override
-    public void displayRoomDetails() {
-        System.out.println("Deluxe Room " + getRoomNumber() + " - ₹" + getPrice() +
-            (seaView ? " - Sea View" : " - No Sea View") +
-            (isAvailable() ? " - Available" : " - Not Available") +
-            (getCustomer() != null ? " - Booked by: " + getCustomer().getName() : ""));
+    public boolean isSeaView() {
+        return seaView;
     }
+
+    public void setSeaView(boolean seaView) {
+        this.seaView = seaView;
+    }
+
+    
+
+
 }

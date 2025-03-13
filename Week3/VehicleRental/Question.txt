@@ -1,4 +1,5 @@
 🔥 Question 3: Vehicle Rental System
+
 Problem Statement:
 A vehicle rental company wants to create a system to manage available and rented vehicles.
 
@@ -9,11 +10,9 @@ brand (String)
 pricePerDay (double)
 available (boolean)
 
-
 Create a derived class Car that extends Vehicle with:
 fuelType (String)
 Override toString() to display car details
-
 
 
 Create a derived class Bike that extends Vehicle with:
@@ -31,14 +30,14 @@ Customer object
 Vehicle object
 days (int)
 calculateTotalCost() – Calculate rental cost
+
+
 In Main class:
 
 Create an array of vehicles
 Allow customer to rent a vehicle
 Display available and rented vehicles
 Use super and this to manage constructor calls
-
-
 
 Expected Output:
 Display available and rented vehicles

@@ -1,65 +1,72 @@
-package HotelManagement;
+package Week3.HotelManagement;
 
+// 🔹 Class: Hotel
+// hotelName (String) – Name of the hotel
+// rooms[] (Array of Room) – Array to store rooms
+// addRoom(Room r) – Add a room to the hotel
+// displayAvailableRooms() – Display all available rooms with details
+// bookRoom(int roomNumber, Customer c) – Book a room for a customer if available; otherwise, display "Room not available"
+// displayBookedRooms() – Display details of all booked rooms and which customer booked them
 public class Hotel {
     private String hotelName;
-    public Room[] rooms;
-    private int roomCount;
+    public Room rooms[];// 5 -> capacity of your hotel
+    private int countRooms;
 
     public Hotel(String hotelName, int size) {
         this.hotelName = hotelName;
         rooms = new Room[size];
-        roomCount = 0;
+        countRooms = 0;
     }
 
-    // Method to add a room to the hotel
     public void addRoom(Room r) {
-        if (roomCount < rooms.length) {
-            rooms[roomCount] = r;
-            roomCount++;
-            System.out.println("Room added: " + r.getRoomNumber());
+        if (countRooms < rooms.length) {
+            rooms[countRooms] = r;
+            countRooms++;
+            System.out.println("Room Added : " + r.getRoomNumber());
         } else {
-            System.out.println("Cannot add more rooms. Hotel is full!");
+            System.out.println("Can not add more rooms");
         }
+
     }
 
-    // Method to display available rooms
     public void displayAvailableRooms() {
-        System.out.println("\nAvailable Rooms:");
-        for (int i = 0; i < roomCount; i++) {
-            if (rooms[i].isAvailable()) {
-                rooms[i].displayRoomDetails();
+        System.out.println("\n Available Rooms");
+        for (Room r : rooms) {
+            if (r.isAvailability() == true) {
+                System.out.println(r);
             }
         }
     }
 
-    // Method to display booked rooms and their customer details
-    public void displayBookedRooms() {
-        System.out.println("\nBooked Rooms:");
-        for (int i = 0; i < roomCount; i++) {
-            if (!rooms[i].isAvailable() && rooms[i].getCustomer() != null) {
-                rooms[i].displayRoomDetails();
-            }
-        }
-    }
-
-    // Method to book a room by room number
-    public void bookRoom(int roomNumber, Customer customer) {
-        boolean found = false;
-        for (int i = 0; i < roomCount; i++) {
-            if (rooms[i].getRoomNumber() == roomNumber) {
-                found = true;
-                if (rooms[i].isAvailable()) {
-                    rooms[i].setAvailability(false);
-                    rooms[i].setCustomer(customer);
-                    System.out.println(customer.getName() + " booked Room " + roomNumber + " successfully!");
-                } else {
-                    System.out.println("Room " + roomNumber + " is not available.");
+    public void bookRoom(int roomNumber, Custoomer c) {
+        boolean flag=false;
+            for(int i=0;i<rooms.length;i++){
+                if(rooms[i].getRoomNumber()==roomNumber){
+                    flag=true;
+                    if(rooms[i].isAvailability()){
+                        rooms[i].setAvailability(false);
+                        rooms[i].setCustomer(c);
+                        System.out.println("Room number "  +roomNumber + " is booked by " + c.getName());
+                    }
+                    else{
+                        System.out.println("roomNumber " + roomNumber +" is not availabe");
+                    }
                 }
-                break;
+
+            }
+            if(flag==false){
+                System.out.println("Room " + roomNumber + " number not found");
+            }
+    }
+
+    public void displayBookedRooms() {
+        System.out.println("\n Booked Rooms");
+        for (Room r : rooms) {
+            if (r.isAvailability() == false && r.getCustomer() != null) {
+                r.displayRoomDetails();
             }
         }
-        if (!found) {
-            System.out.println("Room " + roomNumber + " not found.");
-        }
+
     }
+
 }

@@ -20,10 +20,10 @@ Create a final method getAnnualSalary() that returns the yearly salary
 
 
 Create a Manager class that extends Employee with:
-teamSize (int)
-Use super to call the parent class constructor
-In Main class:
+c
 
+
+In Main class:
 Create an array of 5 Employee objects
 Create at least one Manager object
 Find and display all employees with a salary greater than 50,000
